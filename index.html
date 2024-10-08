@@ -1,54 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BD3 FIREBASE</title>
-    <!-- <link rel="stylesheet" href="style.csss"> -->
+    <title>BD3 - Firebase</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <body>
-        
+    <h1>WEB Libre - Firebase: Firestore</h1>
+    <div class="content">
+        <form id="add-book-form"></form>
+       <input type="text" name="autor" placeholder="Nome do autor">
+       <input type="text" name="tiulo" placeholder="titulo do livro">
+       <button>CADASTRAR</button>
+    </div>
     
-    <!-- IMPORT DO SDK DO FIREBASE --> 
+</body>
+<!-- SDK do firebase -->
 
     <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script> 
 
-  
 
-    <!-- IMPORT DO SDK DO FIRESTORE --> 
+<!-- sdk do firestore -->
 
     <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script> 
 
-    <!-- CONEXÃO COM DIREBASE-->
+<!--  conexão com o firebase -->
+<script>
+    /* os dados de conexão com o firebase*/
+ 
+    const firebaseConfig = {
+        apiKey: "AIzaSyDLA-KMxBALaKqnl2qW-WKwp-QrYMUM_rY",
+        authDomain: "bd3-app-libri-samuel.firebaseapp.com",
+        projectId: "bd3-app-libri-samuel",
+        storageBucket: "bd3-app-libri-samuel.appspot.com",
+        messagingSenderId: "426293785239",
+        appId: "1:426293785239:web:c9a4b2a54cd67617936fd2",
+        measurementId: "G-H63B4B8376"
+      };
+      /* inicializa o firebase*/
+      firebase.initializeApp(firebaseConfig);
 
-    <script>
-        /*CRIANDO OS DADOS DO FIREBASE*/
-        const firebaseConfig = {
-            apiKey: "AIzaSyDLA-KMxBALaKqnl2qW-WKwp-QrYMUM_rY",
-            authDomain: "bd3-app-libri-samuel.firebaseapp.com",
-            projectId: "bd3-app-libri-samuel",
-            storageBucket: "bd3-app-libri-samuel.appspot.com",
-            messagingSenderId: "426293785239",
-            appId: "1:426293785239:web:c9a4b2a54cd67617936fd2",
-            measurementId: "G-H63B4B8376"
-          };
-          /* inicializa o firebase*/
-          firebase.initializeApp(firebaseConfig);
+      /*inicialza o firestore*/
+      const db = firebase.firestore();
+      console.log(db);
 
-          /*inicialza o firestore*/
-          const db = firebase.firestore();
-          console.log(db);
-        
+      
+</script>
+<script src='app.js'>
     
-          /* importação do arquivo*/
-
-
-    </script>
-    <script src="app.js">
-           /* importação do arquivo*/
-
-    </script>
-    </body>
-</body>
+</script>
 </html>
+
