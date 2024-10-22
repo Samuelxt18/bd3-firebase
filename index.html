@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BD3 - Firebase</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>WEB Libre - Firebase: Firestore</h1>
-    <div class="content">
-        <form id="add-book-form"></form>
-       <input type="text" name="autor" placeholder="Nome do autor">
-       <input type="text" name="tiulo" placeholder="titulo do livro">
-       <button>CADASTRAR</button>
+    <h1>WEB APP Libre - Firebase: Firestore</h1>
+    <div class=" content">
+        <form id="add-book-form">
+            <input type ="text" name="autor" placeholder="Nome do autor">
+            <input type ="text" name="autor" placeholder="Titulo do livro">
+            <button> CADASTRAR</button>
+
+        </form>
+        <ul id ="book-list"></ul>
     </div>
     
 </body>
@@ -28,7 +31,7 @@
 <!--  conexão com o firebase -->
 <script>
     /* os dados de conexão com o firebase*/
- 
+   
     const firebaseConfig = {
         apiKey: "AIzaSyDLA-KMxBALaKqnl2qW-WKwp-QrYMUM_rY",
         authDomain: "bd3-app-libri-samuel.firebaseapp.com",
@@ -45,10 +48,9 @@
       const db = firebase.firestore();
       console.log(db);
 
+
       
 </script>
-<script src='app.js'>
-    
-</script>
-</html>
+<script src="app.js"></script>
 
+</html>
